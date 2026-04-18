@@ -1,0 +1,20 @@
+name: BaerPlugin
+version: '${project.version}'
+main: com.baerplugin.BaerPlugin
+api-version: '1.21'
+description: Баер - магазин ресурсов с серверными лимитами
+authors: [YourName]
+
+commands:
+  baer:
+    description: Открыть магазин Баера
+    usage: /baer
+    permission: baer.use
+
+permissions:
+  baer.use:
+    description: Разрешает открыть магазин Баера
+    default: true
+  baer.admin:
+    description: Доступ к административным командам Баера
+    default: op
